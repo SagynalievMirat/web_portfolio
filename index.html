@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirat Sagynaliev — Student Programmer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12 9 2h10l-5 10z"/><path d="M1 14 7 6"/></svg><span>MIRAT<br><b>DEV</b></span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About me</a><a href="#works">Selected Works</a><a href="#skills">What I do</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="theme-btn" id="themeBtn" aria-label="Switch light/dark theme">🌙</button>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <p class="hi"><span class="wave">👋</span> Hi! There, I’m Mirat,</p>
+  <h1 class="title">
+    <span class="fill">WEB DEVELOPER</span>
+    <span class="line2"><span class="fill">&amp;</span><span class="outline">PROGRAMMER</span></span>
+  </h1>
+  <p class="tag">I Build Clean, Simple Websites And Love Learning Every Day.<br>Just Simple Like That!</p>
+  <a href="#contact" class="btn dark">Let’s Talk <i class="arr">→</i></a>
+
+  <a href="#works" class="badge" aria-label="My projects">
+    <svg viewBox="0 0 100 100">
+      <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+      <text><textPath href="#circ">MY PROJECTS · MY PROJECTS · MY PROJECTS ·</textPath></text>
+    </svg>
+    <span class="down">↓</span>
+  </a>
+</section>
+
+<section class="about reveal" id="about">
+  <h2 class="sm">About me</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="lead">Hello! I’m Mirat Sagynaliev, a motivated student programmer who enjoys turning ideas into clean, responsive websites. I’m at the start of my web development journey and bring curiosity and dedication to every project I build.</p>
+      <p>I have practiced HTML, CSS, JavaScript and Figma, and I’m learning to design layouts and bring them to life in code. I like solving problems step by step and creating interfaces that are simple and easy to use.</p>
+      <a href="#contact" class="btn dark">Let’s Talk <i class="arr">→</i></a>
+    </div>
+    <div class="about-side">
+      <div class="photo"><img src="images/myphoto.jpeg" alt="Portrait of Mirat Sagynaliev" onerror="this.remove()"></div>
+      <p class="cap">A student programmer turning ideas into clean, working websites.</p>
+    </div>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <h2 class="sm">Selected works</h2>
+  <div class="toolbar">
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="uiux">UI/UX</button>
+      <button class="chip" data-filter="web">Web</button>
+      <button class="chip" data-filter="poster">Poster</button>
+      <button class="chip" data-filter="mobile">Mobile</button>
+    </div>
+    <label class="search" for="search"><span class="vh">Search projects</span><input id="search" type="search" placeholder="Search projects..."></label>
+  </div>
+  <p class="empty" id="empty" hidden>Nothing found. Try another word or filter.</p>
+  <div class="grid" id="grid">
+    <article class="card reveal" data-cat="uiux">
+      <div class="thumb t1"><div class="phone p-a"></div><div class="phone p-b"></div><span class="pill">Figma</span><span class="pill">Research</span><span class="pill">Prototype</span></div>
+      <div class="meta"><div><h3>Study Planner</h3><p>UI/UX Case Study</p></div><a href="#contact" class="circ" aria-label="Discuss this project">→</a></div>
+    </article>
+    <article class="card reveal" data-cat="web">
+      <div class="thumb t2"><div class="laptop"></div><span class="pill">JavaScript</span></div>
+      <div class="meta"><div><h3>Weather Now</h3><p>Weather Web App</p></div><a href="#contact" class="circ" aria-label="Discuss this project">→</a></div>
+    </article>
+    <article class="card reveal" data-cat="poster">
+      <div class="thumb t3"><b class="poster-t">CODE CLUB</b><small>EVENT POSTER</small><div class="plate"></div><span class="pill">Photoshop</span><span class="pill">Figma</span></div>
+      <div class="meta"><div><h3>Code Club</h3><p>Event Poster Design</p></div><a href="#contact" class="circ" aria-label="Discuss this project">→</a></div>
+    </article>
+    <article class="card reveal" data-cat="mobile">
+      <div class="thumb t4"><div class="phone p-c"></div><div class="phone p-d"></div></div>
+      <div class="meta"><div><h3>Mini Shop</h3><p>Mobile App Design</p></div><a href="#contact" class="circ" aria-label="Discuss this project">→</a></div>
+    </article>
+  </div>
+  <a href="#works" class="btn dark center">View All Works <i class="arr">→</i></a>
+</section>
+
+<section class="skills" id="skills">
+  <span class="glow"></span>
+  <div class="skills-text">
+    <p class="small">What I Do !</p>
+    <h2>My Specialization<br>And Key Skills</h2>
+  </div>
+  <div class="hexes">
+    <div class="hex h1"><b class="ai">JS</b><small>JavaScript</small></div>
+    <div class="hex h2"><b class="fg">5</b><small>HTML</small></div>
+    <div class="hex h3"><b class="ui">▣</b><small>Web Design</small></div>
+    <div class="hex h4"><b class="ui">▤</b><small>UI UX Design</small></div>
+    <div class="hex h5"><b class="fr">◈</b><small>Framer</small></div>
+    <div class="hex h6"><b class="ui">Git</b><small>GitHub</small></div>
+    <div class="hex h7"><b class="fg">●</b><small>Figma</small></div>
+    <div class="hex h8"><b class="ui">▥</b><small>Wireframing</small></div>
+    <div class="hex h9"><b class="ui">◐</b><small>Prototype</small></div>
+    <div class="hex h10"><b class="ps">3</b><small>CSS</small></div>
+    <div class="hex h11"><b class="ui">◉</b><small>Responsive</small></div>
+  </div>
+</section>
+
+<section class="contact reveal" id="contact">
+  <p class="small">Contact</p>
+  <h2 class="big">Let’s rock <span>with me</span></h2>
+  <form class="form" id="contactForm" novalidate>
+    <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name"><small class="err" id="nameErr"></small></div>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><small class="err" id="emailErr"></small></div>
+    <div class="field"><label for="msg">Message</label><textarea id="msg" name="msg" rows="4"></textarea><small class="err" id="msgErr"></small></div>
+    <button type="submit" class="btn dark">Send message <i class="arr">→</i></button>
+    <p class="ok" id="formOk" role="status" hidden>Thank you! Your message has been sent.</p>
+  </form>
+  <div class="links"><a href="tel:+996708415848">(+996) 708 415 848</a><a href="mailto:superotrichkaa@gmail.com">superotrichkaa@gmail.com</a></div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <span class="glow2"></span>
+  <a href="#home" class="logo light"><svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12 9 2h10l-5 10z"/><path d="M1 14 7 6"/></svg><span>MIRAT<br><b>DEV</b></span></a>
+  <div class="socials"><a href="https://www.linkedin.com" target="_blank" rel="noopener">Linkedin</a><a href="https://github.com" target="_blank" rel="noopener">GitHub</a><a href="https://t.me" target="_blank" rel="noopener">Telegram</a><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></div>
+  <p class="copy">© Mirat Sagynaliev. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
